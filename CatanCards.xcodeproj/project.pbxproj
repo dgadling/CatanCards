@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9139048B1A27AEAA00D5F2FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9139048A1A27AEAA00D5F2FC /* AVFoundation.framework */; };
+		9139048D1A27AECE00D5F2FC /* cards shuffle 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9139048C1A27AECE00D5F2FC /* cards shuffle 3.mp3 */; };
 		91DE00AD1A26A43A00BFD460 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DE00AC1A26A43A00BFD460 /* main.m */; };
 		91DE00B01A26A43A00BFD460 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DE00AF1A26A43A00BFD460 /* AppDelegate.m */; };
 		91DE00B31A26A43A00BFD460 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DE00B21A26A43A00BFD460 /* ViewController.m */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9139048A1A27AEAA00D5F2FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9139048C1A27AECE00D5F2FC /* cards shuffle 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cards shuffle 3.mp3"; sourceTree = "<group>"; };
 		91DE00A71A26A43A00BFD460 /* CatanCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatanCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DE00AB1A26A43A00BFD460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91DE00AC1A26A43A00BFD460 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9139048B1A27AEAA00D5F2FC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +68,7 @@
 		91DE009E1A26A43A00BFD460 = {
 			isa = PBXGroup;
 			children = (
+				9139048A1A27AEAA00D5F2FC /* AVFoundation.framework */,
 				91DE00A91A26A43A00BFD460 /* CatanCards */,
 				91DE00C31A26A43B00BFD460 /* CatanCardsTests */,
 				91DE00A81A26A43A00BFD460 /* Products */,
@@ -96,6 +102,7 @@
 		91DE00AA1A26A43A00BFD460 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9139048C1A27AECE00D5F2FC /* cards shuffle 3.mp3 */,
 				91DE00AB1A26A43A00BFD460 /* Info.plist */,
 				91DE00AC1A26A43A00BFD460 /* main.m */,
 			);
@@ -202,6 +209,7 @@
 			files = (
 				91DE00B61A26A43A00BFD460 /* Main.storyboard in Resources */,
 				91DE00BB1A26A43B00BFD460 /* LaunchScreen.xib in Resources */,
+				9139048D1A27AECE00D5F2FC /* cards shuffle 3.mp3 in Resources */,
 				91DE00B81A26A43A00BFD460 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +425,7 @@
 				91DE00CC1A26A43B00BFD460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91DE00CD1A26A43B00BFD460 /* Build configuration list for PBXNativeTarget "CatanCardsTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +434,7 @@
 				91DE00CF1A26A43B00BFD460 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

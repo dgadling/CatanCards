@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController ()
+{
+    AVAudioPlayer *_audioPlayer;
+}
 
 @end
 
@@ -48,6 +52,13 @@
         UIColorFromRGB(0x9edae5),
     ];
 
+    // Construct URL to sound file
+    NSString *path = [NSString stringWithFormat:@"%@/cards shuffle 3.mp3", [[NSBundle mainBundle] resourcePath]];
+    NSURL *soundUrl = [NSURL fileURLWithPath:path];
+
+    // Create audio player object and initialize with URL to sound
+    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+
     self.cardCount = [self.cards count];
     [self refreshDeck];
     [self selectCard];
@@ -59,6 +70,7 @@
         NSInteger exchangeIndex = i + arc4random_uniform((u_int32_t)remainingCount);
         [self.cards exchangeObjectAtIndex:i withObjectAtIndex:exchangeIndex];
     }
+    [_audioPlayer play];
 
     self.currentCardIdx = self.cardCount - 1;
 }
