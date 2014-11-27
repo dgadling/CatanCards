@@ -11,7 +11,8 @@
 
 @interface ViewController ()
 {
-    AVAudioPlayer *_audioPlayer;
+    AVAudioPlayer *_shuffleSoundPlayer;
+    AVAudioPlayer *_alertSoundPlayer;
 }
 
 @end
@@ -52,25 +53,32 @@
         UIColorFromRGB(0x9edae5),
     ];
 
-    // Construct URL to sound file
     NSString *path = [NSString stringWithFormat:@"%@/cards shuffle 3.mp3", [[NSBundle mainBundle] resourcePath]];
     NSURL *soundUrl = [NSURL fileURLWithPath:path];
+    _shuffleSoundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
 
-    // Create audio player object and initialize with URL to sound
-    _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    path = [NSString stringWithFormat:@"%@/metal_gear-alert.mp3", [[NSBundle mainBundle] resourcePath]];
+    soundUrl = [NSURL fileURLWithPath:path];
+    _alertSoundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
 
     self.cardCount = [self.cards count];
     [self refreshDeck];
     [self selectCard];
 }
 
-- (void)refreshDeck {
+- (void)shuffleDeck {
     for (NSUInteger i = 0; i < self.cardCount; ++i) {
         NSInteger remainingCount = self.cardCount - i;
         NSInteger exchangeIndex = i + arc4random_uniform((u_int32_t)remainingCount);
         [self.cards exchangeObjectAtIndex:i withObjectAtIndex:exchangeIndex];
     }
-    [_audioPlayer play];
+}
+
+- (void)refreshDeck {
+    [self shuffleDeck];
+    [self shuffleDeck];
+
+    [_shuffleSoundPlayer play];
 
     self.currentCardIdx = self.cardCount - 1;
 }
@@ -97,6 +105,7 @@
     if ([self.currentCard isEqual: @7]) {
         currentLabel = @"Robber!";
         fontSize = 120;
+        [_alertSoundPlayer play];
     }
 
     if ([self.previousLabel.text hasPrefix:currentLabel]) {
