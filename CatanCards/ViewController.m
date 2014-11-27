@@ -34,17 +34,18 @@
     self.colors = @[
         UIColorFromRGB(0xff0000),
         UIColorFromRGB(0xff0000),
-        UIColorFromRGB(0x1f77b4),
+
         UIColorFromRGB(0xaec7e8),
-        UIColorFromRGB(0xff7f0e),
         UIColorFromRGB(0xffbb78),
-        UIColorFromRGB(0x2ca02c),
         UIColorFromRGB(0x98df8a),
-        UIColorFromRGB(0xd62728),
         UIColorFromRGB(0xff9896),
-        UIColorFromRGB(0x9467bd),
         UIColorFromRGB(0xc5b0d5),
-        UIColorFromRGB(0x8c564b),
+        UIColorFromRGB(0xc49c94),
+        UIColorFromRGB(0xf7b6d2),
+        UIColorFromRGB(0xbcbd22),
+        UIColorFromRGB(0xdbdb8d),
+        UIColorFromRGB(0x17becf),
+        UIColorFromRGB(0x9edae5),
     ];
 
     self.cardCount = [self.cards count];
