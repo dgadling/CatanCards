@@ -17,9 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CurrentValue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOs-tv-MZy">
-                                <rect key="frame" x="265" y="289" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOs-tv-MZy">
+                                <rect key="frame" x="265" y="289" width="130" height="130"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="200"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -30,7 +30,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UV4-iO-qcn">
-                                <rect key="frame" x="125" y="113" width="400" height="364"/>
+                                <rect key="frame" x="76" y="87" width="400" height="364"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -44,12 +45,12 @@
                             <constraint firstItem="Unj-Qm-as0" firstAttribute="top" secondItem="UV4-iO-qcn" secondAttribute="bottom" id="84f-F8-qea"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UV4-iO-qcn" secondAttribute="trailing" id="Hfg-G1-Vto"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Unj-Qm-as0" secondAttribute="trailing" id="JKF-5l-Qsq"/>
+                            <constraint firstAttribute="centerY" secondItem="xOs-tv-MZy" secondAttribute="centerY" id="Ovs-Wg-3dq"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Unj-Qm-as0" secondAttribute="bottom" id="UiO-UC-HpR"/>
-                            <constraint firstAttribute="centerX" secondItem="xOs-tv-MZy" secondAttribute="centerX" id="b8f-34-oNa"/>
                             <constraint firstItem="Unj-Qm-as0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cle-Ak-HDt"/>
                             <constraint firstItem="UV4-iO-qcn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="evK-R9-a8P"/>
                             <constraint firstItem="UV4-iO-qcn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jHA-dn-5eH"/>
-                            <constraint firstAttribute="centerY" secondItem="xOs-tv-MZy" secondAttribute="centerY" id="pbh-oe-6qY"/>
+                            <constraint firstAttribute="centerX" secondItem="xOs-tv-MZy" secondAttribute="centerX" id="lzh-ai-Hw9"/>
                         </constraints>
                     </view>
                     <connections>

@@ -14,6 +14,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -51,14 +52,16 @@
         [self refreshDeck];
     }
 
-    self.currentCard = [self.cards objectAtIndex:self.currentCardIdx];
+    self.currentCard = (NSInteger)[self.cards objectAtIndex:self.currentCardIdx];
+
     self.currentCardLabel.text = [NSString stringWithFormat:@"%@", self.currentCard];
+
     self.currentCardIdx--;
 
     if (self.currentCardIdx < 0) {
         self.cardsRemainingLabel.text = @"Shuffle Time!";
     } else {
-        self.cardsRemainingLabel.text = [NSString stringWithFormat:@"%ld",
+        self.cardsRemainingLabel.text = [NSString stringWithFormat:@"%ld left",
                                          (long)self.currentCardIdx + 1];
     }
 }

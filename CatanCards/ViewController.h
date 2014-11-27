@@ -15,7 +15,7 @@
 
 @property NSMutableArray *cards;
 @property NSInteger currentCardIdx;
-@property NSNumber *currentCard;
+@property NSInteger currentCard;
 
 - (IBAction)nextCard:(id)sender;
 
