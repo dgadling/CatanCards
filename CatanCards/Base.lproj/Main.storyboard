@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UV4-iO-qcn">
-                                <rect key="frame" x="16" y="326" width="568" height="245"/>
+                                <rect key="frame" x="16" y="178" width="568" height="245"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="200"/>
                                 <state key="normal" title="12">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,18 +43,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="UV4-iO-qcn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HCO-Rq-pAm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Unj-Qm-as0" secondAttribute="bottom" id="IeX-UL-oAc"/>
-                            <constraint firstItem="Unj-Qm-as0" firstAttribute="top" secondItem="UV4-iO-qcn" secondAttribute="bottom" constant="8" id="NqG-vC-vYX"/>
                             <constraint firstItem="LZf-cc-YXW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="O1n-wX-2ya"/>
-                            <constraint firstItem="UV4-iO-qcn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Q18-pk-SS1"/>
+                            <constraint firstAttribute="centerY" secondItem="UV4-iO-qcn" secondAttribute="centerY" id="Obc-HO-4Gq"/>
+                            <constraint firstAttribute="centerX" secondItem="UV4-iO-qcn" secondAttribute="centerX" id="P48-nw-NAN"/>
                             <constraint firstAttribute="centerX" secondItem="LZf-cc-YXW" secondAttribute="centerX" id="SI9-wW-n4f"/>
                             <constraint firstAttribute="centerX" secondItem="Unj-Qm-as0" secondAttribute="centerX" id="isY-da-yhT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UV4-iO-qcn" secondAttribute="trailing" id="sfy-hm-8m7"/>
+                            <constraint firstItem="UV4-iO-qcn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wqx-v1-OkN"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cardsRemainingLabel" destination="Unj-Qm-as0" id="MVo-gj-6B3"/>
                         <outlet property="currentCardButton" destination="UV4-iO-qcn" id="wqH-bp-etO"/>
+                        <outlet property="mainUIView" destination="8bC-Xf-vdC" id="f4o-P4-p77"/>
                         <outlet property="previousLabel" destination="LZf-cc-YXW" id="Sl9-a3-1hV"/>
                     </connections>
                 </viewController>

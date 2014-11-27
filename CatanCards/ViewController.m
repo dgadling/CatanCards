@@ -31,6 +31,22 @@
         @12
     ]];
 
+    self.colors = @[
+        UIColorFromRGB(0xff0000),
+        UIColorFromRGB(0xff0000),
+        UIColorFromRGB(0x1f77b4),
+        UIColorFromRGB(0xaec7e8),
+        UIColorFromRGB(0xff7f0e),
+        UIColorFromRGB(0xffbb78),
+        UIColorFromRGB(0x2ca02c),
+        UIColorFromRGB(0x98df8a),
+        UIColorFromRGB(0xd62728),
+        UIColorFromRGB(0xff9896),
+        UIColorFromRGB(0x9467bd),
+        UIColorFromRGB(0xc5b0d5),
+        UIColorFromRGB(0x8c564b),
+    ];
+
     self.cardCount = [self.cards count];
     [self refreshDeck];
     [self selectCard];
@@ -47,7 +63,7 @@
 }
 
 - (void)selectCard {
-    if (self.currentCardIdx < 0) {
+    if (self.currentCardIdx < 4) {
         [self refreshDeck];
     }
 
@@ -58,10 +74,11 @@
 }
 
 - (void)updateCardDisplay {
-    self.previousLabel.text = self.currentCardButton.titleLabel.text;
+    [self.previousLabel setText:[self.currentCardButton.titleLabel text]];
 
     NSString *currentLabel = [NSString stringWithFormat:@"%@", self.currentCard];
 
+    [self.mainUIView setBackgroundColor:[self.colors objectAtIndex:[self.currentCard integerValue]]];
     CGFloat fontSize = 200;
 
     if ([self.currentCard isEqual: @7]) {
@@ -82,10 +99,13 @@
         self.streak = 1;
     }
 
+    [self.previousLabel setText:[NSString stringWithFormat:@"Previous: %@", self.previousLabel.text]];
+    [self.currentCardButton setHidden:YES];
     [self.currentCardButton.titleLabel setFont:[UIFont fontWithName:@"Menlo" size:fontSize]];
     [self.currentCardButton setTitle:currentLabel forState:UIControlStateNormal];
-
-    if (self.currentCardIdx < 0) {
+    [self.currentCardButton setHidden:NO];
+    
+    if (self.currentCardIdx < 4) {
         self.cardsRemainingLabel.text = @"Shuffle Time!";
     } else {
         self.cardsRemainingLabel.text = [NSString stringWithFormat:@"%ld left",
