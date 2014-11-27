@@ -76,7 +76,7 @@
         } else {
             fontSize = 120;
         }
-        currentLabel = [NSString stringWithFormat:@"%@(x%u)",
+        currentLabel = [NSString stringWithFormat:@"%@(x%lu)",
                         currentLabel, self.streak];
     } else {
         self.streak = 1;
