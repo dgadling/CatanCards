@@ -10,12 +10,15 @@
 
 @interface ViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UILabel *currentCardLabel;
+@property (strong, nonatomic) IBOutlet UIButton *currentCardButton;
 @property (strong, nonatomic) IBOutlet UILabel *cardsRemainingLabel;
+@property (strong, nonatomic) IBOutlet UILabel *previousLabel;
 
 @property NSMutableArray *cards;
 @property NSInteger currentCardIdx;
-@property NSInteger currentCard;
+@property NSNumber * currentCard;
+@property NSUInteger streak;
+@property NSUInteger cardCount;
 
 - (IBAction)nextCard:(id)sender;
 
