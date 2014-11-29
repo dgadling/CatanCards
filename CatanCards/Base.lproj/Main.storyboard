@@ -30,8 +30,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="60" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iF6-1z-dLT">
-                                <rect key="frame" x="24" y="330" width="552" height="233"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="200"/>
+                                <rect key="frame" x="24" y="126" width="552" height="350"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="300"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -39,12 +39,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Unj-Qm-as0" firstAttribute="top" secondItem="iF6-1z-dLT" secondAttribute="bottom" constant="16" id="5Ds-ow-UGm"/>
+                            <constraint firstAttribute="centerY" secondItem="iF6-1z-dLT" secondAttribute="centerY" id="0OH-Ub-vqo"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Unj-Qm-as0" secondAttribute="bottom" id="IeX-UL-oAc"/>
-                            <constraint firstItem="iF6-1z-dLT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Jxs-Rl-no9"/>
+                            <constraint firstItem="iF6-1z-dLT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="L6o-ia-8ZG"/>
                             <constraint firstItem="LZf-cc-YXW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="O1n-wX-2ya"/>
                             <constraint firstAttribute="centerX" secondItem="LZf-cc-YXW" secondAttribute="centerX" id="SI9-wW-n4f"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iF6-1z-dLT" secondAttribute="trailing" constant="8" id="bSI-6W-5fR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iF6-1z-dLT" secondAttribute="trailing" constant="8" id="dd1-p1-7dp"/>
                             <constraint firstAttribute="centerX" secondItem="Unj-Qm-as0" secondAttribute="centerX" id="isY-da-yhT"/>
                         </constraints>
                         <connections>
