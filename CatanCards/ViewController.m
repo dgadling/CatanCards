@@ -104,16 +104,16 @@
 
     if ([self.currentCard isEqual: @7]) {
         currentLabel = @"Robber!";
-        fontSize = 120;
+        fontSize *= 0.6;
         [_alertSoundPlayer play];
     }
 
     if ([self.previousLabel.text hasPrefix:currentLabel]) {
         self.streak++;
         if ([currentLabel isEqualToString:@"Robber!"]) {
-            fontSize = 80;
+            fontSize *= 0.4;
         } else {
-            fontSize = 120;
+            fontSize *= 0.6;
         }
         currentLabel = [NSString stringWithFormat:@"%@(x%lu)",
                         currentLabel, (unsigned long)self.streak];
