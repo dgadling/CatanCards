@@ -10,6 +10,7 @@
 		9139048B1A27AEAA00D5F2FC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9139048A1A27AEAA00D5F2FC /* AVFoundation.framework */; };
 		9139048D1A27AECE00D5F2FC /* cards shuffle 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9139048C1A27AECE00D5F2FC /* cards shuffle 3.mp3 */; };
 		9139048F1A27B3DF00D5F2FC /* metal_gear-alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9139048E1A27B3DF00D5F2FC /* metal_gear-alert.mp3 */; };
+		913904911A2A5C8A00D5F2FC /* keyboard-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 913904901A2A5C8A00D5F2FC /* keyboard-click.mp3 */; };
 		91DE00AD1A26A43A00BFD460 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DE00AC1A26A43A00BFD460 /* main.m */; };
 		91DE00B01A26A43A00BFD460 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DE00AF1A26A43A00BFD460 /* AppDelegate.m */; };
 		91DE00B31A26A43A00BFD460 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DE00B21A26A43A00BFD460 /* ViewController.m */; };
@@ -33,6 +34,7 @@
 		9139048A1A27AEAA00D5F2FC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9139048C1A27AECE00D5F2FC /* cards shuffle 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cards shuffle 3.mp3"; sourceTree = "<group>"; };
 		9139048E1A27B3DF00D5F2FC /* metal_gear-alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "metal_gear-alert.mp3"; sourceTree = "<group>"; };
+		913904901A2A5C8A00D5F2FC /* keyboard-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "keyboard-click.mp3"; sourceTree = "<group>"; };
 		91DE00A71A26A43A00BFD460 /* CatanCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatanCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DE00AB1A26A43A00BFD460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91DE00AC1A26A43A00BFD460 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		91DE00AA1A26A43A00BFD460 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				913904901A2A5C8A00D5F2FC /* keyboard-click.mp3 */,
 				9139048E1A27B3DF00D5F2FC /* metal_gear-alert.mp3 */,
 				9139048C1A27AECE00D5F2FC /* cards shuffle 3.mp3 */,
 				91DE00AB1A26A43A00BFD460 /* Info.plist */,
@@ -212,6 +215,7 @@
 			files = (
 				91DE00B61A26A43A00BFD460 /* Main.storyboard in Resources */,
 				91DE00BB1A26A43B00BFD460 /* LaunchScreen.xib in Resources */,
+				913904911A2A5C8A00D5F2FC /* keyboard-click.mp3 in Resources */,
 				9139048D1A27AECE00D5F2FC /* cards shuffle 3.mp3 in Resources */,
 				91DE00B81A26A43A00BFD460 /* Images.xcassets in Resources */,
 				9139048F1A27B3DF00D5F2FC /* metal_gear-alert.mp3 in Resources */,

@@ -13,6 +13,7 @@
 {
     AVAudioPlayer *_shuffleSoundPlayer;
     AVAudioPlayer *_alertSoundPlayer;
+    AVAudioPlayer *_clickSoundPlayer;
 }
 
 @end
@@ -60,6 +61,10 @@
     path = [NSString stringWithFormat:@"%@/metal_gear-alert.mp3", [[NSBundle mainBundle] resourcePath]];
     soundUrl = [NSURL fileURLWithPath:path];
     _alertSoundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+
+    path = [NSString stringWithFormat:@"%@/keyboard-click.mp3", [[NSBundle mainBundle] resourcePath]];
+    soundUrl = [NSURL fileURLWithPath:path];
+    _clickSoundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
 
     self.cardCount = [self.cards count];
     [self refreshDeck];
@@ -138,6 +143,7 @@
 }
 
 - (IBAction)incomingGesture:(id)sender {
+    [_clickSoundPlayer play];
     [self selectCard];
 }
 
