@@ -95,7 +95,7 @@
 }
 
 - (void)updateCardDisplay {
-    [self.previousLabel setText:[self.currentCardButton.titleLabel text]];
+    [self.previousLabel setText:[self.currentCardLabel text]];
 
     NSString *currentLabel = [NSString stringWithFormat:@"%@", self.currentCard];
 
@@ -122,10 +122,7 @@
     }
 
     [self.previousLabel setText:[NSString stringWithFormat:@"Previous: %@", self.previousLabel.text]];
-    [self.currentCardButton setHidden:YES];
-    [self.currentCardButton.titleLabel setFont:[UIFont fontWithName:@"Menlo" size:fontSize]];
-    [self.currentCardButton setTitle:currentLabel forState:UIControlStateNormal];
-    [self.currentCardButton setHidden:NO];
+    [self.currentCardLabel setText:currentLabel];
     
     if (self.currentCardIdx < 4) {
         self.cardsRemainingLabel.text = @"Shuffle Time!";
@@ -140,7 +137,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)nextCard:(id)sender {
+- (IBAction)incomingGesture:(id)sender {
     [self selectCard];
 }
+
 @end

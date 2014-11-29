@@ -12,10 +12,11 @@
 
 @interface ViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIButton *currentCardButton;
+@property (strong, nonatomic) IBOutlet UILabel *currentCardLabel;
 @property (strong, nonatomic) IBOutlet UILabel *cardsRemainingLabel;
 @property (strong, nonatomic) IBOutlet UILabel *previousLabel;
 @property (strong, nonatomic) IBOutlet UIView *mainUIView;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *mainGestureRecognizer;
 
 @property NSMutableArray *cards;
 @property NSInteger currentCardIdx;
@@ -24,7 +25,7 @@
 @property NSUInteger cardCount;
 @property NSArray * colors;
 
-- (IBAction)nextCard:(id)sender;
+- (IBAction)incomingGesture:(id)sender;
 
 @end
 
